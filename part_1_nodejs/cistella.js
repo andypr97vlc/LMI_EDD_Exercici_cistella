@@ -1,7 +1,7 @@
 // cistella.js (Mòdul principal)
 import readlineSync from 'readline-sync';
 
-// TO-DO
+
 // Implementa una classe Producte, amb les propietats (que podran inicialitzar-se en el constructor):
 // - descripcio: amb la descripció del producte
 // - preu: el preu per unitat del producte
@@ -20,7 +20,6 @@ class Producte{
     }
 }
 
-// TO-DO
 // Implementa una classe cistella, que contindrà com a propietat
 // - Un vector (inicialment buit), al que afegirem parells JSON {producte, quantitat}
 
@@ -85,7 +84,7 @@ function afegirProducte(cistella) {
         return;
     }
 
-    // TO-DO: Crea un nou producte amb les dades que s'han introduit, 
+    // Crea un nou producte amb les dades que s'han introduit, 
     // i afig-lo a la cistella.
 
     const producte = new Producte(nom, preu);
@@ -97,7 +96,6 @@ function afegirProducte(cistella) {
 // Funció principal
 function iniciarAplicacio() {
 
-    // TO-DO:
     // Crea un objecte de tipus cistella
     const cistella = new Cistella();
 
@@ -109,10 +107,10 @@ function iniciarAplicacio() {
 
         switch (ordre) {
             case 'add':
-                afegirProducte(cistella); // TO-DO: Descomentar quan es tinga implementat
+                afegirProducte(cistella); // Descomentar quan es tinga implementat
                 break;
             case 'show':
-                cistella.mostrarCistella(); // TO-DO: Descomentar quan es tinga implementat
+                cistella.mostrarCistella(); // Descomentar quan es tinga implementat
                 break;
             case 'help':
                 mostraAjuda();
